@@ -38,8 +38,8 @@ public class MenuPrincipal {
             System.out.println("=========================================");
             
             System.out.println("\n════════════ MENÚ PRINCIPAL ════════════");
-            System.out.println("1. FASE 1: Decimal a Otras Bases eduardo ");
-            System.out.println("2. FASE 2: Otras Bases a Decimal alexis ");
+            System.out.println("1. FASE 1: Decimal a Otras Bases ");
+            System.out.println("2. FASE 2: Otras Bases a Decimal ");
             System.out.println("3. FASE 3: Complemento a Dos");
             System.out.println("4. FASE 4: Suma y Resta Binaria");
             System.out.println("5. 🚪 SALIR");
