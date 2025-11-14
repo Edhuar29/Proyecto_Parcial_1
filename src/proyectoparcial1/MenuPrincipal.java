@@ -9,7 +9,7 @@ public class MenuPrincipal {
         this.scanner = new Scanner(System.in);
     }
     
-    // ★★★ MÉTODO QUE SÍ LIMPIA PANTALLA ★★★
+    
     private void limpiarPantalla() {
         try {
             System.out.print("\033[H\033[2J");
