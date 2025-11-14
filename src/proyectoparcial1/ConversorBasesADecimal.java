@@ -1,8 +1,6 @@
 package proyectoparcial1;
 
 public class ConversorBasesADecimal {
-    public static void main(String[] args) {
-		
-
-	}
+    // Fase 2 - Conversión de Otras Bases a Decimal
+    // Desarrollado por: Alexis
 }
