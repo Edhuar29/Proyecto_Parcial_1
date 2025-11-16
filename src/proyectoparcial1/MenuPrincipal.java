@@ -95,9 +95,8 @@ public class MenuPrincipal {
         limpiarPantalla();
         System.out.println("🎯 FASE 2: CONVERSIÓN OTRAS BASES A DECIMAL");
         System.out.println("Desarrollado por: Alexis");
-        System.out.println("Esta funcionalidad está en desarrollo...");
-        System.out.println("\nPresiona Enter para volver al menú principal...");
-        scanner.nextLine();
+        System.out.println();
+        ConversorBasesADecimal.mostrarMenuConversorDecimal();
     }
     
     private void ejecutarFase3() {
