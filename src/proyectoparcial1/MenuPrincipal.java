@@ -4,12 +4,11 @@ import java.util.Scanner;
 
 public class MenuPrincipal {
     private Scanner scanner;
-    
+
     public MenuPrincipal() {
         this.scanner = new Scanner(System.in);
     }
-    
-    
+
     private void limpiarPantalla() {
         try {
             System.out.print("\033[H\033[2J");
@@ -23,12 +22,12 @@ public class MenuPrincipal {
             }
         }
     }
-    
+
     public static void main(String[] args) {
         MenuPrincipal menu = new MenuPrincipal();
         menu.mostrarMenuPrincipal();
     }
-    
+
     public void mostrarMenuPrincipal() {
         while (true) {
             limpiarPantalla();
@@ -36,7 +35,7 @@ public class MenuPrincipal {
             System.out.println("    PROYECTO PARCIAL 1 - CONVERSOR");
             System.out.println("     SISTEMAS NUMÉRICOS Y CA2");
             System.out.println("=========================================");
-            
+
             System.out.println("\n════════════ MENÚ PRINCIPAL ════════════");
             System.out.println("1. FASE 1: Decimal a Otras Bases ");
             System.out.println("2. FASE 2: Otras Bases a Decimal ");
@@ -45,11 +44,11 @@ public class MenuPrincipal {
             System.out.println("5. 🚪 SALIR");
             System.out.println("══════════════════════════════════════════");
             System.out.print("Seleccione una opción: ");
-            
+
             try {
                 int opcion = scanner.nextInt();
                 scanner.nextLine();
-                
+
                 switch (opcion) {
                     case 1:
                         ejecutarFase1();
@@ -81,7 +80,7 @@ public class MenuPrincipal {
             }
         }
     }
-    
+
     private void ejecutarFase1() {
         limpiarPantalla();
         System.out.println("🎯 FASE 1: CONVERSIÓN DECIMAL A OTRAS BASES");
@@ -90,7 +89,7 @@ public class MenuPrincipal {
         ConversorDecimalABases conversor = new ConversorDecimalABases();
         conversor.ejecutarMenu();
     }
-    
+
     private void ejecutarFase2() {
         limpiarPantalla();
         System.out.println("🎯 FASE 2: CONVERSIÓN OTRAS BASES A DECIMAL");
@@ -98,19 +97,23 @@ public class MenuPrincipal {
         System.out.println();
         ConversorBasesADecimal.mostrarMenuConversorDecimal();
     }
-    
+
     private void ejecutarFase3() {
         limpiarPantalla();
         System.out.println("🎯 FASE 3: COMPLEMENTO A DOS");
-        System.out.println("Esta funcionalidad está en desarrollo...");
+        System.out.println("Desarrollado por: Javier");
+        Complemento2 fase3 = new Complemento2();
+        fase3.ejecutar();
         System.out.println("\nPresiona Enter para volver al menú principal...");
         scanner.nextLine();
     }
-    
+
     private void ejecutarFase4() {
         limpiarPantalla();
         System.out.println("🎯 FASE 4: SUMA Y RESTA BINARIA");
-        System.out.println("Esta funcionalidad está en desarrollo...");
+        System.out.println("Desarrollado por: Javier");
+        SumaRestaCa2 fase4 = new SumaRestaCa2();
+        fase4.ejecutar();
         System.out.println("\nPresiona Enter para volver al menú principal...");
         scanner.nextLine();
     }
